@@ -15,12 +15,10 @@ import {
 // icons
 import { MdAccessTime } from "react-icons/md";
 
-export default function CourseDetailPage({
-    params,
-}: {
-    params: { id: string };
-}) {
-    const course = courses.find((c) => c.id === params.id);
+export default function CourseDetailPage({params}) {
+    
+    const fieldId = params["id"];
+    const course = courses.find((c) => c.id === fieldId.id);
 
     if (!course) return notFound();
 
