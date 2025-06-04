@@ -5,16 +5,17 @@ import VideoTutorial from "@/components/ui/VideoTutorial";
 import TestimonialSection from "@/components/ui/TestimonialSection";
 import LearnSection from "@/components/ui/Features";
 import Cta from "@/components/ui/Cta";
+import { MainLayout } from "@/components/layout/MainLayout";
 
 export default function Home() {
   return (
-    <div>
+    <MainLayout>
       <Hero />
       <LearnSection />
       <CourseSection />
       <VideoTutorial />
       <TestimonialSection />
       <Cta/>
-    </div>
+    </MainLayout>
   );
 }
